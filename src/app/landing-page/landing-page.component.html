@@ -1,0 +1,10 @@
+<div class="landing-block">
+    <form #emailForm="ngForm" (ngSubmit)="onSubmitForm(emailForm)">
+        <label for="emailInput">Inscrivez-vous pour recevoir notre newletter !</label>
+        <input id="emailInput" name="userEmail" type="email"  [(ngModel)]="userEmail">
+        <button type="submit">OK!</button>
+    </form>
+    <img src="assets/snapangular.jpg" alt="Snapangular logo">
+    <div class="landing-links">
+        <button (click)="onContinue()">Continuer vers SnapAngular</button>
+    </div>
