@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularSnap } from '../models/angular-snap.models';
-import { AngularSnapsService } from '../services/angular-snaps.service';
+import { AngularSnap } from '../../../core/models/angular-snap.models';
+import { AngularSnapsService } from '../../../core/services/angular-snaps.service';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators'

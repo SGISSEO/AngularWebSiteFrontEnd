@@ -1,6 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
-import { AngularSnap } from '../models/angular-snap.models';
-import { AngularSnapsService } from '../services/angular-snaps.service';
+import { AngularSnap } from '@models/angular-snap.models';
+import { AngularSnapsService } from '@services/angular-snaps.service';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-angular-snap',
