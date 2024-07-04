@@ -1,14 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Angular1SnapListComponent } from './angular-snaps/components/angular-snap-list/angular-snap-list.component';
 import { LandingPageComponent } from './landing-page/components/landing-page/landing-page.component';
-import { SingleAngular1SnapComponent } from './angular-snaps/components/single-angular-snap/single-angular-snap.component';
-import { NewAngular1SnapComponent } from './angular-snaps/components/new-angular-snap/new-angular-snap.component';
 
 const routes: Routes = [
-    { path: 'angularsnaps/:id', component: SingleAngular1SnapComponent},
-    { path: 'angularsnaps', component: Angular1SnapListComponent },
-    { path: 'create', component: NewAngular1SnapComponent},
+    { path: 'angularsnaps', loadChildren: () => import('./angular-snaps/angular-snaps.module').then(m => m.AngularSnapsModule) },
     { path: '', component: LandingPageComponent}
 ];
 

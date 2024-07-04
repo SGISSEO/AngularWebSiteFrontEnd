@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   }
 
   onAddNewAngularSnap(): void {
-    this.router.navigateByUrl('/create');
+    this.router.navigateByUrl('/angularsnaps/create');
   }
 
 }

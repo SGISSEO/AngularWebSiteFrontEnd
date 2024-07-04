@@ -6,6 +6,7 @@ import { SingleAngular1SnapComponent } from './components/single-angular-snap/si
 import { NewAngular1SnapComponent } from './components/new-angular-snap/new-angular-snap.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AngularSnapsRoutingModule } from './angular-snaps-routing.module';
 
 
 
@@ -20,7 +21,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    RouterModule
+    AngularSnapsRoutingModule
   ],
   exports: [
     Angular1SnapComponent,
